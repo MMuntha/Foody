@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "paths": {
+      "@atoms": ["./src/Components/Atoms/index"],
+      "@molecules": ["./src/Components/Molecules/index"]
+      // "@styles/*": ["./src/styles/*"]
+    }
+  }
+}
