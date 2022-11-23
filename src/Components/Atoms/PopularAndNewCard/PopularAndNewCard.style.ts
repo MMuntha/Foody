@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 30,
     justifyContent: 'flex-end',
-    marginRight: 10,
   },
   image: {
     width: 200,

@@ -1,17 +1,17 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
 import {PopularAndNewCard, Title} from '@atoms';
-import styles from './PopularView.style';
 import data from '../../../data.json';
+import globalMoleculeStyle from '../Style';
 
 const PopularView = () => {
   return (
-    <View style={styles.container}>
+    <View style={globalMoleculeStyle.container}>
       <Title
         type="main-title"
         text="Popular and new"
         fontSize={20}
-        style={styles.textView}
+        style={globalMoleculeStyle.headingTitle}
       />
       <FlatList
         data={data.foods}
@@ -24,6 +24,9 @@ const PopularView = () => {
         )}
         horizontal={true}
         showsHorizontalScrollIndicator={false}
+        ItemSeparatorComponent={() => (
+          <View style={globalMoleculeStyle.spaceBetweenItems} />
+        )}
       />
     </View>
   );

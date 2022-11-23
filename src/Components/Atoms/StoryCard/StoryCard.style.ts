@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
     shadowColor: '#B7B7B7',
     shadowOpacity: 0.7,
     shadowRadius: 3,
-    marginRight: 10,
   },
   overlay: {
     backgroundColor: '#333030',

@@ -1,6 +1,6 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import {StoryView, Header, PopularView} from '@molecules';
+import {StoryView, Header, PopularView, CategoryView} from '@molecules';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
@@ -8,6 +8,7 @@ const App = () => {
         <Header />
         <StoryView />
         <PopularView />
+        <CategoryView />
       </View>
     </SafeAreaView>
   );

@@ -2,10 +2,11 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import {HeaderTitle, SearchIcon, NavBarLogo} from '@atoms';
 import styles from './Header.style';
+import globalMoleculeStyle from '../Style';
 
 const Header = () => {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, globalMoleculeStyle.container]}>
       <View style={styles.logoContainer}>
         <NavBarLogo />
       </View>
