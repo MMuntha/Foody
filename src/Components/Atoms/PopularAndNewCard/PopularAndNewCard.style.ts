@@ -7,10 +7,12 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 30,
     justifyContent: 'flex-end',
+    marginRight: 10,
   },
   image: {
     width: 200,
     height: 150,
+    borderRadius: 30,
   },
   overlay: {
     backgroundColor: '#333030',
@@ -18,7 +20,7 @@ const styles = StyleSheet.create({
     height: 150,
     position: 'absolute',
     opacity: 0.2,
-    borderRadius: 20,
+    borderRadius: 30,
   },
   priceAndNameContainer: {
     position: 'absolute',

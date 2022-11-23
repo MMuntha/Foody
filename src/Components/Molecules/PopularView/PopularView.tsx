@@ -1,7 +1,8 @@
 import React from 'react';
-import {View} from 'react-native';
+import {View, FlatList} from 'react-native';
 import {PopularAndNewCard, Title} from '@atoms';
 import styles from './PopularView.style';
+import data from '../../../data.json';
 
 const PopularView = () => {
   return (
@@ -12,7 +13,18 @@ const PopularView = () => {
         fontSize={20}
         style={styles.textView}
       />
-      <PopularAndNewCard />
+      <FlatList
+        data={data.foods}
+        renderItem={({item}) => (
+          <PopularAndNewCard
+            image={item.image}
+            name={item.name}
+            price={item.price}
+          />
+        )}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+      />
     </View>
   );
 };
