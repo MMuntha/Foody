@@ -28,19 +28,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: 200,
   },
-  nameView: {
-    backgroundColor: 'black',
-    borderRadius: 10,
-    padding: 5,
-  },
-  priceView: {
-    backgroundColor: '#E42021',
-    borderRadius: 10,
-    padding: 5,
-  },
-  text: {
-    color: 'white',
-  },
 });
 
 export default styles;

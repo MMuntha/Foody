@@ -8,7 +8,11 @@
     "isolatedModules": true,
     "paths": {
       "@atoms": ["./src/Components/Atoms/index"],
-      "@molecules": ["./src/Components/Molecules/index"]
+      "@molecules": ["./src/Components/Molecules/index"],
+      "@organisms": ["./src/Components/Organisms/index"],
+      "@templates": ["./src/Components/Templates/index"],
+      "@screens": ["./src/Components/Screens/index"],
+      "@navigators": ["./src/Navigators/index"]
       // "@styles/*": ["./src/styles/*"]
     }
   }

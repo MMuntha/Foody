@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {View, Text, Image, FlatList} from 'react-native';
-import {Title, StoryCard} from '@atoms';
+import {Title} from '@atoms';
+import {AStory} from '@molecules';
 import data from '../../../data.json';
 import globalMoleculeStyle from '../Style';
 import styles from './StoryView.style';
@@ -17,7 +18,7 @@ const StoryView = () => {
         <FlatList
           data={data.foods}
           renderItem={({item}) => (
-            <StoryCard image={item.image} name={item.name} />
+            <AStory image={item.image} text={item.name} />
           )}
           horizontal={true}
           showsHorizontalScrollIndicator={false}

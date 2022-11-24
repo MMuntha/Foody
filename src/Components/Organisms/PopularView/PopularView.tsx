@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
 import {PopularAndNewCard, Title} from '@atoms';
+import {PopularAndNew} from '@molecules';
 import data from '../../../data.json';
 import globalMoleculeStyle from '../Style';
 
@@ -16,7 +17,7 @@ const PopularView = () => {
       <FlatList
         data={data.foods}
         renderItem={({item}) => (
-          <PopularAndNewCard
+          <PopularAndNew
             image={item.image}
             name={item.name}
             price={item.price}

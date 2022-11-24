@@ -3,7 +3,7 @@ import {Text} from 'react-native';
 import {IText} from './Text.interface';
 import styles from './Text.style';
 
-const Title = ({type, fontSize, text, style}: IText) => {
+const Title = ({type, fontSize, text, style, fontColor}: IText) => {
   let mainTitle: boolean = true;
 
   if (type === 'sub-title') {
@@ -13,7 +13,7 @@ const Title = ({type, fontSize, text, style}: IText) => {
     <Text
       style={[
         mainTitle ? styles.mainTitle : styles.subTitle,
-        {fontSize: fontSize},
+        {fontSize: fontSize, color: fontColor},
         style,
       ]}>
       {text}

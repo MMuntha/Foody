@@ -1,4 +1,4 @@
 export interface IStoryCard {
-  name: string;
   image: string;
+  children?: JSX.Element;
 }

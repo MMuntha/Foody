@@ -1,5 +1,4 @@
 import {StyleSheet} from 'react-native';
-import {white} from 'react-native-paper/lib/typescript/styles/colors';
 
 const styles = StyleSheet.create({
   container: {
@@ -24,7 +23,6 @@ const styles = StyleSheet.create({
   },
   text: {
     position: 'absolute',
-    color: 'white',
   },
   image: {
     width: 150,

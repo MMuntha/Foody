@@ -1,16 +1,15 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import {StoryView, Header, PopularView, CategoryView} from '@molecules';
+import {BottomTabNavigation} from '@navigators';
+import {NavigationContainer} from '@react-navigation/native';
+
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <View>
-        <Header />
-        <StoryView />
-        <PopularView />
-        <CategoryView />
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={styles.container}>
+        <BottomTabNavigation />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 

@@ -9,6 +9,10 @@ module.exports = {
         alias: {
           '@atoms': './src/Components/Atoms/index',
           '@molecules': './src/Components/Molecules/index',
+          '@organisms': './src/Components/Organisms/index',
+          '@templates': './src/Components/Templates/index',
+          '@screens': './src/Components/Screens/index',
+          '@navigators': './src/Navigators/index',
           // '@hooks': './src/hooks/index',
         },
       },

@@ -1,5 +1,4 @@
 export interface IPopularAndNewCard {
   image: string;
-  name: string;
-  price: string;
+  children?: JSX.Element;
 }
