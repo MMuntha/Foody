@@ -1,7 +1,8 @@
 export interface IButton {
   text: string;
-  height: number;
-  width: number;
+  height?: number;
+  width?: number;
+  fontSize?: number;
 }
 
 // import {

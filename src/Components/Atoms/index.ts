@@ -7,3 +7,5 @@ export {default as StoryCard} from './StoryCard/StoryCard';
 export {default as Title} from './Text/Text';
 export {default as PopularAndNewCard} from './PopularAndNewCard/PopularAndNewCard';
 export {default as CategoryIcon} from './CategoryIcon/CategoryIcon';
+export {default as FoodCard} from './FoodCard/FoodCard';
+export {FavoriteIconFill, FavoriteIconOutline} from './Icons/index';

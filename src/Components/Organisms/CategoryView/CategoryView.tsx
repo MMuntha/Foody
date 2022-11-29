@@ -1,22 +1,22 @@
 import React from 'react';
 import {FlatList, View} from 'react-native';
 import {CategoryIcon} from '@atoms';
-import globalMoleculeStyle from '../Style';
+import globalOrganismStyle from '../Style';
 import {Title} from '@atoms';
 import data from '../../../data.json';
 const CategoryView = () => {
   return (
-    <View style={globalMoleculeStyle.container}>
+    <View style={globalOrganismStyle.container}>
       <Title
         text="Categories"
         fontSize={20}
         type="main-title"
-        style={globalMoleculeStyle.headingTitle}
+        style={globalOrganismStyle.headingTitle}
       />
       <FlatList
         data={data.foods}
         ItemSeparatorComponent={() => (
-          <View style={globalMoleculeStyle.spaceBetweenItems} />
+          <View style={globalOrganismStyle.spaceBetweenItems} />
         )}
         renderItem={({item}) => (
           <View>

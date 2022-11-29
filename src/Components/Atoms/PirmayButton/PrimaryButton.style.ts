@@ -7,12 +7,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#E42021',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 20,
+    borderRadius: 5,
+    padding: 5,
   },
   text: {
     color: 'white',
-    fontFamily: 'WorkSans-Bold',
-    fontSize: 25,
+    fontFamily: 'WorkSans-Medium',
   },
 });
 

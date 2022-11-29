@@ -2,20 +2,20 @@ import React from 'react';
 import {View, FlatList} from 'react-native';
 import {PopularAndNewCard, Title} from '@atoms';
 import {PopularAndNew} from '@molecules';
-import data from '../../../data.json';
-import globalMoleculeStyle from '../Style';
+import {IPopularView} from './PopularView.interface';
+import globalOrganismStyle from '../Style';
 
-const PopularView = () => {
+const PopularView = ({popularAndNew}: IPopularView) => {
   return (
-    <View style={globalMoleculeStyle.container}>
+    <View style={globalOrganismStyle.container}>
       <Title
         type="main-title"
         text="Popular and new"
         fontSize={20}
-        style={globalMoleculeStyle.headingTitle}
+        style={globalOrganismStyle.headingTitle}
       />
       <FlatList
-        data={data.foods}
+        data={popularAndNew}
         renderItem={({item}) => (
           <PopularAndNew
             image={item.image}
@@ -26,7 +26,7 @@ const PopularView = () => {
         horizontal={true}
         showsHorizontalScrollIndicator={false}
         ItemSeparatorComponent={() => (
-          <View style={globalMoleculeStyle.spaceBetweenItems} />
+          <View style={globalOrganismStyle.spaceBetweenItems} />
         )}
       />
     </View>

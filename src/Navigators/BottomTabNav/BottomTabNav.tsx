@@ -1,31 +1,35 @@
 import React from 'react';
-import {HomeScreenTemplate, About} from '@templates';
+import {HomeScreenTemplate, FavoriteScreenTemplate} from '@templates';
+import {FavoriteScreen, HomeScreen} from '@screens';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-vector-icons/Ionicons';
+import {
+  FavoriteIconFill,
+  HomeIconFill,
+  HomeIconOutline,
+  FavoriteIconOutline,
+} from '@atoms';
 
 const Tab = createBottomTabNavigator();
 
 const BottomTabNavigation = () => {
   return (
-    <Tab.Navigator
-      screenOptions={({route}) => ({
-        tabBarIcon: ({focused, color, size}) => {
-          let iconName: any;
-
-          if (route.name === 'Home') {
-            iconName = focused ? 'home' : 'home-outline';
-          } else if (route.name === 'About') {
-            iconName = focused ? 'heart' : 'heart-outline';
-          }
-
-          // You can return any component that you like here!
-          return <Icon name={iconName} size={30} color="#E42021" />;
-        },
-        tabBarActiveTintColor: 'tomato',
-        tabBarInactiveTintColor: 'gray',
-      })}>
-      <Tab.Screen name="Home" component={HomeScreenTemplate} />
-      <Tab.Screen name="About" component={About} />
+    <Tab.Navigator screenOptions={{headerShown: false}}>
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          tabBarIcon: ({focused}) =>
+            focused ? <HomeIconFill /> : <HomeIconOutline />,
+        }}
+      />
+      <Tab.Screen
+        name="Favorites"
+        component={FavoriteScreen}
+        options={{
+          tabBarIcon: ({focused}) =>
+            focused ? <FavoriteIconFill /> : <FavoriteIconOutline />,
+        }}
+      />
     </Tab.Navigator>
   );
 };

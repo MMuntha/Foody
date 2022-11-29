@@ -3,27 +3,37 @@
     {
       "name": "Burger",
       "price": "$12.0",
-      "image": "https://media.istockphoto.com/id/1206323282/photo/juicy-hamburger-on-white-background.jpg?s=612x612&w=0&k=20&c=K0DxyiChLwewXcCy8aLjjOqkc8QXPgQMAW-vwRCzqG4="
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "https://media.istockphoto.com/id/1206323282/photo/juicy-hamburger-on-white-background.jpg?s=612x612&w=0&k=20&c=K0DxyiChLwewXcCy8aLjjOqkc8QXPgQMAW-vwRCzqG4=",
+      "favorite": false
     },
     {
       "name": "Pizza",
       "price": "$12.0",
-      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=60"
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=60",
+      "favorite": false
     },
     {
       "name": "Tacoos",
       "price": "$12.0",
-      "image": "https://loveandgoodstuff.com/wp-content/uploads/2020/08/classic-ground-beef-tacos-1200x1200.jpg"
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "https://loveandgoodstuff.com/wp-content/uploads/2020/08/classic-ground-beef-tacos-1200x1200.jpg",
+      "favorite": true
     },
     {
       "name": "Donuts",
       "price": "$12.0",
-      "image": "https://www.shugarysweets.com/wp-content/uploads/2020/01/baked-chocolate-donuts-recipe.jpg"
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "https://www.shugarysweets.com/wp-content/uploads/2020/01/baked-chocolate-donuts-recipe.jpg",
+      "favorite": false
     },
     {
       "name": "Pasta",
       "price": "$12.0",
-      "image": "https://www.allrecipes.com/thmb/1TJdzkaeVgEQqpYfDgiL5Oh1RNY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/242356-8412a59fc9f646c2adff0694722e9a70.jpg"
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "https://www.allrecipes.com/thmb/1TJdzkaeVgEQqpYfDgiL5Oh1RNY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/242356-8412a59fc9f646c2adff0694722e9a70.jpg",
+      "favorite": true
     }
   ]
 }

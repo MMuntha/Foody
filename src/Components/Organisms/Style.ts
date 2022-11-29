@@ -1,8 +1,8 @@
 import {StyleSheet} from 'react-native';
 
-const globalMoleculeStyle = StyleSheet.create({
+const globalOrganismStyle = StyleSheet.create({
   container: {
-    padding: 10,
+    // padding: 10,
   },
   headingTitle: {
     marginBottom: 10,
@@ -10,6 +10,9 @@ const globalMoleculeStyle = StyleSheet.create({
   spaceBetweenItems: {
     width: 10,
   },
+  heightSpaceBetweenItems: {
+    height: 10,
+  },
 });
 
-export default globalMoleculeStyle;
+export default globalOrganismStyle;
